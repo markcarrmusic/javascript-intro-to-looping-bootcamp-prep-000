@@ -25,6 +25,7 @@ function whileLoop(n) {
 // Do-While Loop
 function doWhileLoop(array) {
   function maybeTrue() {
+<<<<<<< HEAD
   return Math.random() >= 0.5;
   }
   do {
@@ -32,4 +33,15 @@ function doWhileLoop(array) {
   }
   while (newArray.length > 0 && maybeTrue());
   return newArray;
+=======
+  return Math.random() >= 0.5
+  }
+  
+  do {
+   array = array.slice(1);
+  }
+  
+  while (array.length > 0 && maybeTrue());
+  return array;
+>>>>>>> 74eb94a837055652eaffd0b20afb380bbe9965f1
 }
